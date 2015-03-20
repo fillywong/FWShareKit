@@ -17,35 +17,35 @@ Xcode Version 6.1.1
 Teting in ios8 & ios7
 
 #Prepare For new project
-1.Frmamework need to import
-libz.dylib
-libm.dylib
-libpthread.dylib
-SystemConfiguration.framework
-CFNetwork.framework
-AddressBook.framework
-Foundation.framework
-CoreMotion.framework
-CoreGraphics.framework
-CoreText.framework
-MediaPlayer.framework
-Security.framework
-AVFoundation.framework
-CoreMedia.framework
-Accounts.framework
-AssetsLibrary.framework
-CoreLocation.framework
-StoreKit.framework
-Social.framework
+1.Frmamework need to import<br>
+libz.dylib<br>
+libm.dylib<br>
+libpthread.dylib<br>
+SystemConfiguration.framework<br>
+CFNetwork.framework<br>
+AddressBook.framework<br>
+Foundation.framework<br>
+CoreMotion.framework<br>
+CoreGraphics.framework<br>
+CoreText.framework<br>
+MediaPlayer.framework<br>
+Security.framework<br>
+AVFoundation.framework<br>
+CoreMedia.framework<br>
+Accounts.framework<br>
+AssetsLibrary.framework<br>
+CoreLocation.framework<br>
+StoreKit.framework<br>
+Social.framework<br>
 
 2.Project setting
-in build settings
-  Other Linker Flags :-ObjC
-in info
-  Set URL Types 
-info.plist
-  set FacebookAppID
-  set FacebookDisplayName
+in build settings<br>
+  Other Linker Flags :-ObjC<br>
+in info<br>
+  Set URL Types <br>
+info.plist<br>
+  set FacebookAppID<br>
+  set FacebookDisplayName<br>
 
 3.AppDelegate need to implement WXApiDelegate, GPPSignInDelegate
 
@@ -54,47 +54,46 @@ info.plist
 ```    [self initWeChat];```
 ```    return YES;```
 ```}```
+```
+```- (void)initGooglePlus ```
+```{
+    [GPPSignIn sharedInstance].clientID = @"698755649817-rabvr3qlsnu2024s93ajtcb66it2hsh6.apps.googleusercontent.com";```
+}
 
-```-(void)initGooglePlus```
-```{```
-```    [GPPSignIn sharedInstance].clientID = @"698755649817-rabvr3qlsnu2024s93ajtcb66it2hsh6.apps.googleusercontent.com";```
-```}```
+ -(void)initWeChat
+{
+    [WXApi registerApp:@"wxsdeeasaadddd22d6"];
+}
 
-```-(void)initWeChat```
-```{```
-```    [WXApi registerApp:@"wxsdeeasaadddd22d6"];```
-```}```
+ - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [WXApi handleOpenURL:url delegate:self];
+}
 
-```// Pre 4.2 support```
-```- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {```
-```    return [WXApi handleOpenURL:url delegate:self];```
-```}```
 
-```// For 4.2+ support```
-```- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {```
-```    if([[url absoluteString] rangeOfString:@"fb"].location != NSNotFound)```
-```    {```
-```        return [FBAppCall handleOpenURL:url```
-```                      sourceApplication:sourceApplication```
-```                        fallbackHandler:^(FBAppCall *call) {```
-```                            NSLog(@"Unhandled deep link: %@", url);```
-```                        }];```
-```    }```
-```    else if ([[url absoluteString] rangeOfString:@"com"].location != NSNotFound)```
-```    {```
-```        return [GPPURLHandler handleURL:url```
-```                      sourceApplication:sourceApplication```
-```                             annotation:annotation];```
-```    }```
-```    else```
-```    {```
-```        return [WXApi handleOpenURL:url delegate:self];```
-```    }```
-```    return NO;```
-```}```
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    if([[url absoluteString] rangeOfString:@"fb"].location != NSNotFound)
+    {
+        return [FBAppCall handleOpenURL:url
+                      sourceApplication:sourceApplication
+                        fallbackHandler:^(FBAppCall *call) {
+                            NSLog(@"Unhandled deep link: %@", url);
+                        }];
+    }
+    else if ([[url absoluteString] rangeOfString:@"com"].location != NSNotFound)
+    {
+        return [GPPURLHandler handleURL:url
+                      sourceApplication:sourceApplication
+                             annotation:annotation];
+   }
+    else
+    {
+        return [WXApi handleOpenURL:url delegate:self];
+    }
+    return NO;
+}
 
-```//google+```
-```- (void)finishedWithAuth: (GTMOAuth2Authentication *)auth```
-```                   error: (NSError *) error {```
-```    NSLog(@"Received error %@ and auth object %@",error, auth);```
-```}```
+//google+
+- (void)finishedWithAuth: (GTMOAuth2Authentication *)auth
+                   error: (NSError *) error {
+    NSLog(@"Received error %@ and auth object %@",error, auth);
+}```
