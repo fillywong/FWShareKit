@@ -23,7 +23,7 @@
 
 -(void)initGooglePlus
 {
-    [GPPSignIn sharedInstance].clientID = @"asdfasdfasdfasdfasdfasdfsdf.apps.googleusercontent.com";
+    [GPPSignIn sharedInstance].clientID = @"698755649817-rabvr3qlsnu2024s93ajtcb66it2hsh6.apps.googleusercontent.com";
 }
 
 -(void)initWeChat

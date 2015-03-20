@@ -644,6 +644,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FWShareKit",
 				);
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -663,6 +665,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FWShareKit",
 				);
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -720,6 +724,7 @@
 				5A0C47D31AB9116200FE7C23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A0C47D41AB9116200FE7C23 /* Build configuration list for PBXNativeTarget "FWShareKitTests" */ = {
 			isa = XCConfigurationList;
@@ -728,6 +733,7 @@
 				5A0C47D61AB9116200FE7C23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
