@@ -42,6 +42,25 @@
 		5A0C48221AB91A6400FE7C23 /* ShareProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C481D1AB91A6400FE7C23 /* ShareProvider.m */; };
 		5A0C48231AB91A6400FE7C23 /* ShareUrlProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C481F1AB91A6400FE7C23 /* ShareUrlProvider.m */; };
 		5A0C48251AB91A8A00FE7C23 /* btn_player_sharevdo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A0C48241AB91A8A00FE7C23 /* btn_player_sharevdo.png */; };
+		5A0C48361AB95CBC00FE7C23 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C48331AB95CA700FE7C23 /* Social.framework */; };
+		5A0C48391AB95CC900FE7C23 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C48371AB95CC300FE7C23 /* StoreKit.framework */; };
+		5A0C483B1AB95CD100FE7C23 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C483A1AB95CD100FE7C23 /* CoreLocation.framework */; };
+		5A0C483D1AB95CD700FE7C23 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C483C1AB95CD700FE7C23 /* AssetsLibrary.framework */; };
+		5A0C483F1AB95CDC00FE7C23 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C483E1AB95CDC00FE7C23 /* Accounts.framework */; };
+		5A0C48411AB95CE100FE7C23 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C48401AB95CE100FE7C23 /* CoreMedia.framework */; };
+		5A0C48431AB95CE700FE7C23 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C48421AB95CE700FE7C23 /* AVFoundation.framework */; };
+		5A0C48451AB95CEF00FE7C23 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C48441AB95CEF00FE7C23 /* Security.framework */; };
+		5A0C48471AB95CF700FE7C23 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C48461AB95CF700FE7C23 /* MediaPlayer.framework */; };
+		5A0C48491AB95D0200FE7C23 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C48481AB95D0200FE7C23 /* CoreText.framework */; };
+		5A0C484B1AB95D0A00FE7C23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C484A1AB95D0A00FE7C23 /* CoreGraphics.framework */; };
+		5A0C484D1AB95D1100FE7C23 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C484C1AB95D1100FE7C23 /* CoreMotion.framework */; };
+		5A0C484F1AB95D1700FE7C23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C484E1AB95D1700FE7C23 /* Foundation.framework */; };
+		5A0C48511AB95D1F00FE7C23 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C48501AB95D1F00FE7C23 /* AddressBook.framework */; };
+		5A0C48531AB95D2D00FE7C23 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C48521AB95D2D00FE7C23 /* CFNetwork.framework */; };
+		5A0C48551AB95D3A00FE7C23 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C48541AB95D3A00FE7C23 /* SystemConfiguration.framework */; };
+		5A0C48571AB95D4F00FE7C23 /* libpthread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C48561AB95D4F00FE7C23 /* libpthread.dylib */; };
+		5A0C48591AB95D5500FE7C23 /* libm.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C48581AB95D5500FE7C23 /* libm.dylib */; };
+		5A0C485B1AB95D6D00FE7C23 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C485A1AB95D6D00FE7C23 /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +130,25 @@
 		5A0C481E1AB91A6400FE7C23 /* ShareUrlProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareUrlProvider.h; sourceTree = "<group>"; };
 		5A0C481F1AB91A6400FE7C23 /* ShareUrlProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareUrlProvider.m; sourceTree = "<group>"; };
 		5A0C48241AB91A8A00FE7C23 /* btn_player_sharevdo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_player_sharevdo.png; path = FWShareKit/btn_player_sharevdo.png; sourceTree = "<group>"; };
+		5A0C48331AB95CA700FE7C23 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		5A0C48371AB95CC300FE7C23 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		5A0C483A1AB95CD100FE7C23 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5A0C483C1AB95CD700FE7C23 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		5A0C483E1AB95CDC00FE7C23 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		5A0C48401AB95CE100FE7C23 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		5A0C48421AB95CE700FE7C23 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5A0C48441AB95CEF00FE7C23 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5A0C48461AB95CF700FE7C23 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		5A0C48481AB95D0200FE7C23 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		5A0C484A1AB95D0A00FE7C23 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5A0C484C1AB95D1100FE7C23 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		5A0C484E1AB95D1700FE7C23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5A0C48501AB95D1F00FE7C23 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		5A0C48521AB95D2D00FE7C23 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5A0C48541AB95D3A00FE7C23 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5A0C48561AB95D4F00FE7C23 /* libpthread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpthread.dylib; path = usr/lib/libpthread.dylib; sourceTree = SDKROOT; };
+		5A0C48581AB95D5500FE7C23 /* libm.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libm.dylib; path = usr/lib/libm.dylib; sourceTree = SDKROOT; };
+		5A0C485A1AB95D6D00FE7C23 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +156,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A0C485B1AB95D6D00FE7C23 /* libz.dylib in Frameworks */,
+				5A0C48591AB95D5500FE7C23 /* libm.dylib in Frameworks */,
+				5A0C48571AB95D4F00FE7C23 /* libpthread.dylib in Frameworks */,
+				5A0C48551AB95D3A00FE7C23 /* SystemConfiguration.framework in Frameworks */,
+				5A0C48531AB95D2D00FE7C23 /* CFNetwork.framework in Frameworks */,
+				5A0C48511AB95D1F00FE7C23 /* AddressBook.framework in Frameworks */,
+				5A0C484F1AB95D1700FE7C23 /* Foundation.framework in Frameworks */,
+				5A0C484D1AB95D1100FE7C23 /* CoreMotion.framework in Frameworks */,
+				5A0C484B1AB95D0A00FE7C23 /* CoreGraphics.framework in Frameworks */,
+				5A0C48491AB95D0200FE7C23 /* CoreText.framework in Frameworks */,
+				5A0C48471AB95CF700FE7C23 /* MediaPlayer.framework in Frameworks */,
+				5A0C48451AB95CEF00FE7C23 /* Security.framework in Frameworks */,
+				5A0C48431AB95CE700FE7C23 /* AVFoundation.framework in Frameworks */,
+				5A0C48411AB95CE100FE7C23 /* CoreMedia.framework in Frameworks */,
+				5A0C483F1AB95CDC00FE7C23 /* Accounts.framework in Frameworks */,
+				5A0C483D1AB95CD700FE7C23 /* AssetsLibrary.framework in Frameworks */,
+				5A0C483B1AB95CD100FE7C23 /* CoreLocation.framework in Frameworks */,
+				5A0C48391AB95CC900FE7C23 /* StoreKit.framework in Frameworks */,
+				5A0C48361AB95CBC00FE7C23 /* Social.framework in Frameworks */,
 				5A0C47DF1AB9199800FE7C23 /* GoogleOpenSource.framework in Frameworks */,
 				5A0C47E11AB9199800FE7C23 /* GooglePlus.framework in Frameworks */,
 				5A0C47FC1AB91A2200FE7C23 /* FacebookSDK.framework in Frameworks */,
@@ -139,6 +196,7 @@
 		5A0C47A51AB9116100FE7C23 = {
 			isa = PBXGroup;
 			children = (
+				5A0C48351AB95CB000FE7C23 /* Framework */,
 				5A0C47D71AB9116F00FE7C23 /* Image */,
 				5A0C47B01AB9116200FE7C23 /* FWShareKit */,
 				5A0C47CA1AB9116200FE7C23 /* FWShareKitTests */,
@@ -300,6 +358,32 @@
 				5A0C48111AB91A5700FE7C23 /* wechat-timeline.png */,
 			);
 			name = WeChat;
+			sourceTree = "<group>";
+		};
+		5A0C48351AB95CB000FE7C23 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				5A0C485A1AB95D6D00FE7C23 /* libz.dylib */,
+				5A0C48581AB95D5500FE7C23 /* libm.dylib */,
+				5A0C48561AB95D4F00FE7C23 /* libpthread.dylib */,
+				5A0C48541AB95D3A00FE7C23 /* SystemConfiguration.framework */,
+				5A0C48521AB95D2D00FE7C23 /* CFNetwork.framework */,
+				5A0C48501AB95D1F00FE7C23 /* AddressBook.framework */,
+				5A0C484E1AB95D1700FE7C23 /* Foundation.framework */,
+				5A0C484C1AB95D1100FE7C23 /* CoreMotion.framework */,
+				5A0C484A1AB95D0A00FE7C23 /* CoreGraphics.framework */,
+				5A0C48481AB95D0200FE7C23 /* CoreText.framework */,
+				5A0C48461AB95CF700FE7C23 /* MediaPlayer.framework */,
+				5A0C48441AB95CEF00FE7C23 /* Security.framework */,
+				5A0C48421AB95CE700FE7C23 /* AVFoundation.framework */,
+				5A0C48401AB95CE100FE7C23 /* CoreMedia.framework */,
+				5A0C483E1AB95CDC00FE7C23 /* Accounts.framework */,
+				5A0C483C1AB95CD700FE7C23 /* AssetsLibrary.framework */,
+				5A0C483A1AB95CD100FE7C23 /* CoreLocation.framework */,
+				5A0C48371AB95CC300FE7C23 /* StoreKit.framework */,
+				5A0C48331AB95CA700FE7C23 /* Social.framework */,
+			);
+			name = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -503,7 +587,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -538,7 +622,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

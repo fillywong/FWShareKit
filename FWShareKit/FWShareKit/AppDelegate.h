@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import "WXApi.h"
+#import <GooglePlus/GooglePlus.h>
+#import <FacebookSDK/FacebookSDK.h>
+@interface AppDelegate : UIResponder  <UIApplicationDelegate,WXApiDelegate,GPPSignInDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

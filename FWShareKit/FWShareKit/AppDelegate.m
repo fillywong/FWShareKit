@@ -16,8 +16,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [self initGooglePlus];
+    [self initWeChat];
     return YES;
+}
+
+-(void)initGooglePlus
+{
+    [GPPSignIn sharedInstance].clientID = @"asdfasdfasdfasdfasdfasdfsdf.apps.googleusercontent.com";
+}
+
+-(void)initWeChat
+{
+    [WXApi registerApp:@"wxsdeeasaadddd22d6"];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -40,6 +51,42 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+#pragma mark - FBSession Delegate
+// Pre 4.2 support
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [WXApi handleOpenURL:url delegate:self];
+}
+
+// For 4.2+ support
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    if([[url absoluteString] rangeOfString:@"fb"].location != NSNotFound)
+    {
+        return [FBAppCall handleOpenURL:url
+                      sourceApplication:sourceApplication
+                        fallbackHandler:^(FBAppCall *call) {
+                            NSLog(@"Unhandled deep link: %@", url);
+                        }];
+    }
+    else if ([[url absoluteString] rangeOfString:@"com"].location != NSNotFound)
+    {
+        return [GPPURLHandler handleURL:url
+                      sourceApplication:sourceApplication
+                             annotation:annotation];
+    }
+    else
+    {
+        return [WXApi handleOpenURL:url delegate:self];
+    }
+    return NO;
+}
+
+//google+
+- (void)finishedWithAuth: (GTMOAuth2Authentication *)auth
+                   error: (NSError *) error {
+    NSLog(@"Received error %@ and auth object %@",error, auth);
 }
 
 @end
